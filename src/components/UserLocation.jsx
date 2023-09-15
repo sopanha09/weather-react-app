@@ -17,6 +17,7 @@ const UserLocation = () => {
   const locationName = weather?.name;
   const [forecastData, setForecastData] = useState([]);
   const todayForecast = forecastData[0];
+  const [icon, setIcon] = useState(null);
 
   const Humidity = todayForecast?.main?.humidity;
   const windSpeed = todayForecast?.wind?.speed;
@@ -57,6 +58,18 @@ const UserLocation = () => {
         console.log(data.list);
       })
       .catch((error) => console.log(error));
+
+      fetch(
+        `${api.base}weather?lat=${latitude}&lon=${longitude}&appid=${api.key}&units=metric`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          setWeather(data);
+          setIcon(data.weather[0].icon); // Set the icon code here
+          console.log(data);
+      })
+      .catch((error) => console.log(error));
+      
   };
 
   const error = () => {
@@ -73,7 +86,7 @@ const UserLocation = () => {
             {weather && (
               <div className="container">
                 <div className="weatherImage">
-                  <img src={iconImg} alt="" />
+                  <img src={weatherImages[icon]} alt="" />
                   <div className="humidityWind">
                     <p className="humi-wind">
                       <img src={humidity} alt="" />
