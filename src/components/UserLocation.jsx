@@ -76,7 +76,7 @@ const UserLocation = () => {
     console.log("Unable to retrieve your location");
   };
   return (
-    <div className="App-container" >
+    <div className="app-container" >
       <div className="weatherToday">
         {!location ? (
           <p>Loading location data...</p>
@@ -119,7 +119,7 @@ const UserLocation = () => {
           </div>
         )}
       </div>
-      <div className="main-container" >
+      <div className="main-container-2" >
         <Forecast />
       </div>
     </div>
