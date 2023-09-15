@@ -1,27 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Poppins:wght@500;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300&family=Roboto:wght@100;300;700&display=swap");
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Roboto Flex", sans-serif;
-}
-
-body {
-  background: linear-gradient(#07beb8, #3dccc7);
-  height: 100vh;
-}
-
 .weatherToday {
   display: flex;
-  gap: 4em;
   align-items: center;
   justify-content: center;
-  backdrop-filter: blur(5px);
   background: rgba(255, 255, 255, 0.483);
   border-radius: 20px;
-  width: 70%;
-  
+  width: 100%;
+  margin-bottom: 1.5em;
 }
 
 .container {
@@ -29,12 +13,11 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-
 }
 
 .main-container {
-    display: flex;
-    gap: 20px;
+  display: flex;
+  gap: 25px;
 }
 
 .search {
@@ -73,18 +56,19 @@ body {
 }
 
 .humi-wind {
-    display: flex;
-    font-size: small;
-    gap: 3px;
+  display: flex;
+  font-size: small;
+  gap: 3px;
 }
 
 .humi-wind img {
-    width: 15px;
+  width: 15px;
 }
 
 .title {
   margin: 2em;
 }
+
 .weatherMain {
   margin: 2em;
 }

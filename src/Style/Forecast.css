@@ -1,0 +1,24 @@
+.weather {
+  display: flex;
+}
+
+.day {
+  background: rgba(255, 255, 255, 0.483);
+  border-radius: 20px;
+  padding: 1em;
+}
+
+.forecast-container {
+  display: flex;
+  border-radius: 40px;
+  gap: 20px;
+}
+
+.today-forecast {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+.day-temp {
+  text-align: center;
+}
