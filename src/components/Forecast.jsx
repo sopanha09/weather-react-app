@@ -45,14 +45,14 @@ export default function Forecast() {
         const dayName = date.toLocaleString("en-US", { weekday: "long" });
 
         return (
-          <div className="forecast">
-            <div className="day" key={index}>
+          <div className="forecast" key={index}>
+            <div className="day" >
               <p>{dayName}</p>
               <img
                 src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                 alt=""
               />
-              <p className="day-temp" >{Math.round(item.main.temp)} °C</p>
+              <p className="day-temp" >{Math.round(item.main.temp)} &deg;C</p>
             </div>
           </div>
         );
