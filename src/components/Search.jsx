@@ -39,7 +39,7 @@ export const Search = () => {
             });
     };
 
-    
+
     return (
         <div>
             <form className='search' >
@@ -52,9 +52,6 @@ export const Search = () => {
                     Search
                 </button>
             </form>
-            <div>
-                <UserLocation />
-            </div>
         </div>
     )
 }
