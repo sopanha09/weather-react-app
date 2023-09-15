@@ -26,22 +26,7 @@ export const Weather = () => {
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <div className="weatherToday">
-            <div className="weatherImage">
-              <img src={iconImg} alt="" />
-              <div className="humidity-wind">
-                <div className="humidityWind">
-                  <p>
-                    <img src={humidity} alt="" />
-                    Humidity
-                  </p>
-                  <p>
-                    <img src={wind} alt="" /> Wind
-                  </p>
-                </div>
-              </div>
-            </div>
-
+          <div className="weather">
             <UserLocation />
           </div>
         )}

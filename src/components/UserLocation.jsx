@@ -3,7 +3,7 @@ import humidity from "../Image/humidity.png";
 import weatherImages from "../IconList/weatherIcon";
 import wind from "../Image/wind.png";
 import cloudy from "../Image/cloudy.png";
-import "./UserLocation.css"
+import "./UserLocation.css";
 
 const api = {
   key: "6d880005d55b4bfb3ee5c68bcd0b9806",
@@ -50,22 +50,25 @@ const UserLocation = () => {
       {!location ? (
         <p>Loading location data...</p>
       ) : (
-        <div>
+        <div className="main-container">
           <p>{location.name}</p>
           {weather && (
             <div className="container">
               <div className="weatherImage">
                 <img src={iconImg} alt="" />
-                <div className="humidity-wind">
-                  <div className="humidityWind">
-                    <p>
-                      <img src={humidity} alt="" />
-                      Humidity
-                    </p>
-                    <p>
-                      <img src={wind} alt="" /> Wind
-                    </p>
-                  </div>
+                <div className="humidityWind">
+                  <p className="humi-wind" >
+                    <img src={humidity} alt="" />
+                    {weather.main && weather.main.humidity && (
+                      <p>{weather.main.humidity}%</p>
+                    )}
+                  </p>
+                  <p className="humi-wind">
+                    <img src={wind} alt="" />
+                    {weather.wind && weather.wind.speed && (
+                      <p>{weather.wind.speed}Km/h</p>
+                    )}
+                  </p>
                 </div>
               </div>
             </div>

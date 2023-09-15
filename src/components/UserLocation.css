@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Hanken+Grotesk:wght@500;700;800&family=Montserrat:wght@500;700&family=Poppins:wght@500;600&family=Roboto+Flex:opsz,wght@8..144,100;8..144,300&family=Roboto:wght@100;300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+}
+
+body {
+  background: linear-gradient(#07beb8, #3dccc7);
+  height: 100vh;
+}
+
+.weatherToday {
+  display: flex;
+  gap: 4em;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(5px);
+  background: rgba(255, 255, 255, 0.483);
+  border-radius: 20px;
+  width: 70%;
+  
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.main-container {
+    display: flex;
+    gap: 20px;
+}
+
+.search {
+  margin-top: 3em;
+  margin-bottom: 3em;
+  text-align: center;
+  display: flex;
+  gap: 1em;
+}
+
+.input {
+  width: 500px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+  padding-left: 1rem;
+}
+
+.submit {
+  width: 60px;
+  height: 35px;
+  border: none;
+  border-radius: 10px;
+}
+
+.weatherImage img {
+  width: 100px;
+}
+
+.humidityWind {
+  display: flex;
+  gap: 10px;
+}
+.humidityWind img {
+  width: 20px;
+}
+
+.humi-wind {
+    display: flex;
+    font-size: small;
+    gap: 3px;
+}
+
+.humi-wind img {
+    width: 15px;
+}
+
+.title {
+  margin: 2em;
+}
+.weatherMain {
+  margin: 2em;
+}
