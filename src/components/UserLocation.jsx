@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import humidity from "../Image/humidity.png";
-import weatherImages from "../IconList/weatherIcon";
+import WeatherImages from "../IconList/WeatherIcon";
 import wind from "../Image/wind.png";
 import '../Style/UserLocation.css'
 import Forecast from "./Forecast";
@@ -23,7 +23,7 @@ const UserLocation = () => {
   const windSpeed = todayForecast?.wind?.speed;
 
   const iconCode = todayForecast?.weather?.[0]?.icon;
-  const iconImg = weatherImages[iconCode];
+  const iconImg = WeatherImages[iconCode];
 
   useEffect(() => {
     if (navigator.geolocation) {
@@ -76,7 +76,7 @@ const UserLocation = () => {
     console.log("Unable to retrieve your location");
   };
   return (
-    <div className="App-container" >
+    <div className="app-container" >
       <div className="weatherToday">
         {!location ? (
           <p>Loading location data...</p>
@@ -86,7 +86,7 @@ const UserLocation = () => {
             {weather && (
               <div className="container">
                 <div className="weatherImage">
-                  <img src={weatherImages[icon]} alt="" />
+                  <img src={WeatherImages[icon]} alt="" />
                   <div className="humidityWind">
                     <p className="humi-wind">
                       <img src={humidity} alt="" />
@@ -119,7 +119,7 @@ const UserLocation = () => {
           </div>
         )}
       </div>
-      <div className="main-container" >
+      <div className="main-container-2" >
         <Forecast />
       </div>
     </div>

@@ -3,22 +3,39 @@
 }
 
 .day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
   background: rgba(255, 255, 255, 0.483);
   border-radius: 20px;
   padding: 1em;
 }
 
 .forecast-container {
-  display: flex;
-  border-radius: 40px;
-  gap: 20px;
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
 }
 
 .today-forecast {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
 }
 
 .day-temp {
   text-align: center;
+}
+
+.day img {
+  width: 50%;
+}
+
+@media screen and (max-width: 660px) {
+  .forecast-container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
 }
