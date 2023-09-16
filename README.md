@@ -1,6 +1,6 @@
 # Weather App project
 
-This is a Weather App project created by **Sopanha Sous** from **Fireflies team**
+This is my Weather App project created by **Sopanha Sous** from **Fireflies team**
 
 ## About
 A weather app that gets user location and fetches the current weather from the OpenWeatherMap API. 
@@ -9,16 +9,24 @@ A weather app that gets user location and fetches the current weather from the O
 
 - Know the temperature of your location
 - Know the percentage of humidity, and wind
+- Know the weather 4 next days.
 
 ## Product 
 
 ### DeskTop screenshot
 
-<img src="./src/Image/Desktop.png" alt="Desktop Screenshot">
 
-### Mobile screenshot
+### `Display geolocation`
 
-<img src="./src/Image/Mobile.png" alt="Mobile Screenshot" >
+<img src="./src/Image/geolocation.png" alt="Geolocation">
+
+### `Search city name`
+
+<img src="./src/Image/search-city-name.png" alt="City name">
+
+### `Display city name`
+
+<img src="src/Image/display-city-name-by-search.png" alt="Display city name">
 
 
 ## Installation
@@ -28,12 +36,17 @@ A weather app that gets user location and fetches the current weather from the O
 
 ## Usage
 
-- The weather information for the city will be displayed on the your geolocation.
+- The weather information for the city will be displayed on your geolocation.
 - And then display 4 next days
+- About search function you can search by city name, it will drop city name that you want to search. So, you can click on the city name that it drops down it will display whole weather such as geolocation.
 
 ## Technologies
-- OpenWeatherMap API
+- OpenWeatherMap API [link here](https://openweathermap.org/)
+
+## Design UI Screen
+
+Figma Design UI Screen [link here](https://www.figma.com/proto/sa6H9b8VEPC1XkPy62pTv3/Weather-App?type=design&node-id=3-81&t=9FzcrM4PjiYpDrRW-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
 
 ## Convention Guide
 
-[convention link](/doc/convention.md)
+Convention Guide: [link here](/doc/convention.md)
