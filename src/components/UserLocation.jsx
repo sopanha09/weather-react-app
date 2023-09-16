@@ -109,7 +109,7 @@ const UserLocation = ({lat, long}) => {
                                         </p>
                                         <p className="humi-wind">
                                             <img src={wind} alt=""/>
-                                            <p>{Math.round(windSpeed)}Km/h</p>
+                                            <span>{Math.round(windSpeed)}Km/h</span>
                                         </p>
                                     </div>
                                 </div>
@@ -128,7 +128,9 @@ const UserLocation = ({lat, long}) => {
                                     )}
                                 {todayForecast &&
                                     todayForecast.weather &&
-                                    todayForecast.weather[0].main}
+                                    todayForecast.weather[0].main && (
+                                        <p>{todayForecast.weather[0].main}</p>
+                                    )}
                             </div>
                         </div>
                     </div>

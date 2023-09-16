@@ -3,14 +3,17 @@
     margin-top: 3em;
     margin-bottom: 1em;
     gap: 1em;
+
 }
 
+
 .input {
-    width: 200px;
+    width: 250px;
     height: 30px;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     padding-left: 1rem;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
   
 .submit {
@@ -19,4 +22,10 @@
     border: none;
     border-radius: 10px;
     background: #ffff;
+}
+
+.search-result {
+    background: #ffff;
+    border: 1px solid #eff1ed;
+    width: 50%;
 }

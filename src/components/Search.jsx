@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import '../Style/Search.css'
+import '../Style/Search.css';
+
+
 
 const api = {
     key: "6d880005d55b4bfb3ee5c68bcd0b9806",
@@ -26,18 +28,6 @@ export const Search = () => {
             });
     };
 
-    const searchPressed = () => {
-        setLoading(true);
-        console.log(search);
-        fetch(`${api.base}weather?q=${search}&appid=${api.key}&units=metric`)
-            .then((res) => res.json())
-            .then((result) => {
-                console.log(result);
-                setWeather(result);
-                setLoading(false);
-            });
-    };
-
 
     return (
         <div>
@@ -47,9 +37,6 @@ export const Search = () => {
                 type = "text"
                 placeholder='Search for city...'
                 onChange={(e) => setSearch(e.target.value)} />
-                <button className="submit" onClick={searchPressed}>
-                    Search
-                </button>
             </form>
         </div>
     )

@@ -2,7 +2,7 @@ import React, {useEffect, useState} from "react";
 import UserLocation from "./UserLocation";
 import {Search} from "./Search";
 import {api} from "./UserLocation";
-import {updateLatLong} from "./UserLocation";
+
 
 export const Weather = ({searchPressed}) => {
     const [search, setSearch] = useState("");
@@ -54,13 +54,13 @@ export const Weather = ({searchPressed}) => {
                         placeholder="Search for city..."
                         onChange={event => setSearch(event.target.value)}
                     />
-                    {/*<button className="submit" onClick={searchCity}>*/}
-                    {/*    Search*/}
-                    {/*</button>*/}
+
                 </form>
                 {
-                    listCity && listCity?.map((city) => (
+                    listCity && listCity?.map((city, index) => (
                         <button
+                            key={index}
+                            className="search-result"
                             onClick={()=>searchCity(city['lat'], city['lon'])}>{city['name']}</button>
                     ))
                 }
