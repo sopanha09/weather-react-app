@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import UserLocation from './UserLocation';
 import '../Style/Search.css'
 
 const api = {

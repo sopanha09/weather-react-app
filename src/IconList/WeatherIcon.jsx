@@ -12,7 +12,7 @@ import snowflake from '../Image/snowflake.png';
 import wind from '../Image/wind.png';
 
 
-const weatherImages = {
+const WeatherImages = {
     "01d": clearSkySun,
     "01n": clearSky,
     "02d": cloudy,
@@ -33,4 +33,4 @@ const weatherImages = {
     "50n": wind,
 };
 
-export default weatherImages;
+export default WeatherImages;
