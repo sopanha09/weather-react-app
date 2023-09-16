@@ -11,7 +11,7 @@ A weather app that gets user location and fetches the current weather from the O
 - Know the percentage of humidity, and wind
 - Know the weather 4 next days.
 
-## Product 
+## Product Overview
 
 ### DeskTop screenshot
 
@@ -49,4 +49,9 @@ Figma Design UI Screen [link here](https://www.figma.com/proto/sa6H9b8VEPC1XkPy6
 
 ## Convention Guide
 
-Convention Guide: [link here](/doc/convention.md)
+Convention Guide: [link here](./doc/convention.md)
+
+## Note:
+
+I want to thank you to @Seryvatana he has explained me about the concept of do this weather app and also what he helped me do is responsive css.
+The reason my design look similar to him. First, I follow the design example of the school, but accidentally he also followed the design example of the school. This is reason that our design looks similar, but our code is not the same.
