@@ -6,7 +6,7 @@
 
 - Primary Color : `#07beb8`
 - Secondary Color : `#3dccc7`
-- Third Color : `rgba(255, 255, 255, 0.483)`
+- Third Color : `#fefee3`
 - Fourth Color : `#ffff`
 
 <br>
