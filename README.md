@@ -39,6 +39,7 @@ A weather app that gets user location and fetches the current weather from the O
 - The weather information for the city will be displayed on your geolocation.
 - And then display 4 next days
 - About search function you can search by city name, it will drop city name that you want to search. So, you can click on the city name that it drops down it will display whole weather such as geolocation.
+    * `Note:` For the search function, it can only know the name of some cities. while some cities name are unknown. I tried to solve this problem as much as possible but only.
 
 ## Technologies
 - OpenWeatherMap API [link here](https://openweathermap.org/)
