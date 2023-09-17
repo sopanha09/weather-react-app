@@ -1,0 +1,42 @@
+.weather {
+  display: flex;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background: #fefee3;
+  border-radius: 20px;
+  padding: 1em;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.forecast-container {
+  width: 95%;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1rem;
+}
+
+.today-forecast {
+  font-family: "Roboto", sans-serif;
+  font-weight: bold;
+}
+
+.day-temp {
+  text-align: center;
+}
+
+.day img {
+  width: 50%;
+}
+
+@media screen and (max-width: 660px) {
+  .forecast-container {
+    width: 90%;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 1rem;
+  }
+}

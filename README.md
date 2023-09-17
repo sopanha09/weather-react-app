@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+# Weather App project
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is my Weather App project created by **Sopanha Sous** from **Fireflies team**
 
-## Available Scripts
+## About
+A weather app that gets user location and fetches the current weather from the OpenWeatherMap API. 
 
-In the project directory, you can run:
+## Features
 
-### `npm start`
+- Know the temperature of your location
+- Know the percentage of humidity, and wind
+- Know the weather 4 next days.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Product Overview
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### DeskTop screenshot
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### `Display geolocation`
 
-### `npm run build`
+<img src="./src/Image/geolocation.png" alt="Geolocation">
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### `Search city name`
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<img src="./src/Image/search-city-name.png" alt="City name">
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### `Display city name`
 
-### `npm run eject`
+<img src="src/Image/display-city-name-by-search.png" alt="Display city name">
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Installation
+1. Clone the repository: `git clone https://github.com/anb-hq/Fireflies-Panha-Weather.git`
+2. Install dependencies: `npm install`
+3. Run the app: `npm start`
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Usage
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- The weather information for the city will be displayed on your geolocation.
+- And then display 4 next days
+- About search function you can search by city name, it will drop city name that you want to search. So, you can click on the city name that it drops down it will display whole weather such as geolocation.
+    * `Note:` For the search function, it can only know the name of some cities. while some cities name are unknown. I tried to solve this problem as much as possible but only.
 
-## Learn More
+## Technologies
+- OpenWeatherMap API [link here](https://openweathermap.org/)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Design UI Screen
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Figma Design UI Screen [link here](https://www.figma.com/proto/sa6H9b8VEPC1XkPy62pTv3/Weather-App?type=design&node-id=3-81&t=9FzcrM4PjiYpDrRW-0&scaling=min-zoom&page-id=0%3A1&starting-point-node-id=1%3A3)
 
-### Code Splitting
+## Convention Guide
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Convention Guide: [link here](./doc/convention.md)
 
-### Analyzing the Bundle Size
+## Note:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+I want to thank you to @Seryvatana he has explained me about the concept of do this weather app and also what he helped me do is responsive css.
+The reason my design look similar to him. First, I follow the design example of the school, but accidentally he also followed the design example of the school. This is reason that our design looks similar, but our code is not the same.
