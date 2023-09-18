@@ -38,11 +38,9 @@
     ]
   },
   "devDependencies": {
-<<<<<<< HEAD
-    "@svgr/webpack": "^8.1.0"
-=======
     "gh-pages": "^6.0.0",
     "webpack-cli": "^5.1.4"
->>>>>>> 1.01.0
-  }
 }
+}
+
+
