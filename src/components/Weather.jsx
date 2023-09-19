@@ -35,8 +35,6 @@ export const Weather = ({searchPressed}) => {
         return () => clearTimeout(delayDebounceFn)
     }, [search])
 
-    // }
-
     function searchCity(lat, long)  {
         setLat(lat);
         setLong(long)
