@@ -19,7 +19,7 @@ export const Weather = ({ searchPressed }) => {
         console.log(`doSearch ${search}`);
         setSearch(search);
         fetch(
-          `http://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=${api.key}`
+          `https://api.openweathermap.org/geo/1.0/direct?q=${search}&limit=5&appid=${api.key}`
         )
           .then((response) => response.json())
           .then((data) => {

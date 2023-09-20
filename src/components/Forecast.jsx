@@ -49,7 +49,7 @@ export default function Forecast() {
             <div className="day" >
               <p>{dayName}</p>
               <img
-                src={`http://openweathermap.org/img/w/${item.weather[0].icon}.png`}
+                src={`https://openweathermap.org/img/w/${item.weather[0].icon}.png`}
                 alt=""
               />
               <p className="day-temp" >{Math.round(item.main.temp)} &deg;C</p>
