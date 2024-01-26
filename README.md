@@ -52,8 +52,4 @@ Figma Design UI Screen [link here](https://www.figma.com/proto/sa6H9b8VEPC1XkPy6
 
 Convention Guide: [link here](./doc/convention.md)
 
-## Note:
-
-I want to thank you to @Seryvatana he has explained me about the concept of do this weather app and also what he helped me do is responsive css.
-
 Thank You ☺
